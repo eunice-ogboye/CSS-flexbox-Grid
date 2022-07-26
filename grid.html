@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid-con{
+            display: grid;
+            grid-template-columns: 200px 200px 150px 200px 200px;
+            gap: 15px;
+            background-color: #07324e;
+            padding: 3rem 5rem;
+        }
+        .item {
+            padding: 3rem;
+        }
+        .red{
+            background-color: rgb(250, 54, 40);
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+            padding: 6rem;
+        }
+        .yellow{
+            background-color: rgb(250, 205, 3);
+            grid-column: 4 / span 2;
+            grid-row: 1 / span 2;
+            padding: 6rem;
+        }
+        .green{
+            background-color: rgb(8, 189, 8);
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+        }
+        
+        .blue{
+            grid-column: 3 / span 3;
+            background-color: rgb(13, 169, 221);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid-con">
+        <div class="item red"></div>
+        <div class="item yellow"></div>
+        <div class="item green"></div>
+        <div class="item blue blue1"></div>
+        <div class="item blue blue2"></div>
+    </div>
+</body>
+</html>
